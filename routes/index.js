@@ -6,14 +6,14 @@ const router = express.Router();
 // @route   GET /
 
 router.get("/", (req, res) => {
-  res.send("login");
+  res.render("login");
 });
 
 // @desc    Dashboard
 // @route   GET /dashboard
 
 router.get("/dashboard", (req, res) => {
-  res.send("dashboard");
+  res.render("dashboard");
 });
 
 module.exports = router;
